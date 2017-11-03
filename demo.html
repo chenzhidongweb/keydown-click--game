@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./balloon.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background: #ccc;
+        }
+        .app{
+            width:160px;
+            height:160px;
+            background:#efefef;
+            border-radius:160px 160px 64px 160px;
+            transform:rotate(45deg);
+            box-shadow:1px 1px 40px 10px #8e3131 inset;
+            position:absolute;
+            line-height:160px;
+            font-weight:bold;
+            text-align:center;
+            font-size:40px;
+        }
+        .app:after{
+            content:'';
+            border:10px solid red;
+            border-left:none;
+            border-top:none;
+            border-radius:2px;
+            position:absolute;
+            bottom:0;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
